@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&family=Roboto:ital,wght@0,900;1,100&display=swap');
+:root {
+    --lightimg-color:#0089b7;
+    --dark-color:#003d62;
+    --darker-color:#003251;
+    --secondary-color:#fff200;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    color: #f8f8f8;
+}
+
+body, html {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    scroll-behavior: smooth;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+header {
+    background-color: var(--lightimg-color);
+    color: #fff;
+    font-family: 'poppins', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h2 {
+    font-size: 24px;
+}
+
+nav ul {
+    display: flex;
+}
+nav li:hover{
+    border-bottom: 0.4rem var(--secondary-color) solid;
+    transition: 0.3s ease-in-out;
+}
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+.container {
+    padding: 20px;
+}
+#hero{
+    background: var(--dark-color);
+    font-family: 'poppins', sans-serif;
+    padding: 4rem 0;
+    border-bottom: 4px solid;
+}
+#hero .container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.hero-image img{
+    margin-left: 10rem;
+    width: 50%;
+    height: 30%;
+    background: var(--lightimg-color);
+    border-radius: 80px;
+}
+.hero-content{
+    display: grid;
+    place-items: center;
+    margin-right: 40rem;
+}
+#hero h1{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.hi-text{
+    font-size: 6rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+.name-text{
+    font-size: 5rem;
+}
+#hero h2{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff200;
+}
+#projects{
+    background: var(--darker-color);
+}  
+#projects h2{
+    font-size: 6rem;
+    color:#f8f8f8;
+    text-align: center;
+    margin: 2rem 0;
+ }
+ .project-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+ }
+ .grid-item{
+    display: flex;
+    place-items: center;
+ }
+ .card{
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #fff200;
+    border-radius: 5px;
+    text-align: center;
+    /* overflow: hidden; */
+    transition: 0.1s ease-in-out;
+ }
+ .card:hover{
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+ }
+ .card-content{
+    padding: 2rem;
+    position: relative;
+    top: -6.5rem;
+    margin-bottom: -6.5rem;
+    transition: 0.5s ease-in-out;
+ }
+ .card-content h3{
+    text-align: center;
+ }
+ #contact .container {
+   text-align: center;
+   background: var(--dark-color);
+ }
+ .container h2 {
+   font-size: 5em;
+   margin-bottom: 20px;
+ }
+ .contact-way{
+    display: flex;
+ }
+ .contact-way i {
+   font-size: 5em;
+   margin-bottom: 10px;
+   color: #fff;
+ }
+ .contact-container{
+    justify-content: center;
+    align-items: center;
+    margin-right: 25rem;
+ }
+ .contact-way h3 {
+   font-size: 1.2em;
+   margin: 0;
+ }
+ 
+ .top-contact, .bottom-contact {
+   display: flex;
+   justify-content: center;
+   gap: 2rem;
+ }
+ 
+ .top-contact .contact-way, .bottom-contact .contact-way {
+   margin: 0 10px;
+ }
+ .contact-way:nth-child(3) {
+   font-style: italic;
+   font-size: 1.1em;
+ }
+ footer{
+  background: var(--darker-color);
+  padding: 2rem;
+  color: #f8f8f8;
+  font-size: 1.6rem;
+  text-align: center;
+ }
+ @media screen and (max-width: 768px) {
+    .nav ul li {
+      display: block;
+      margin-bottom: 10px;
+    }
+  
+    .hero-content h1 {
+      font-size: 2em;
+    }
+  
+    .hero-content h2 {
+      font-size: 1.2em;
+    }
+  
+    .hero-image img {
+      width: 50%;
+    }
+  
+    .project-container {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+  
+    .card-container h3 {
+      font-size: 1.2em;
+    }
+  
+    .contact-way i {
+      font-size: 1.5em;
+    }
+  
+    .contact-way h3 {
+      font-size: 1em;
+    }
+  }
